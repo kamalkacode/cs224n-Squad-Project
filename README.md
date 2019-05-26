@@ -9,7 +9,7 @@ This repository has the code to run the model my team built for the SQUaD datase
 
 * To run code please run main.py in code. The settings to run BIDAF model are:
 ```
-python code/main.py --experiment_name=bidaf_best --dropout=0.15 --batch_size=60 --hidden_size_encoder=150 --embedding_size=100 --do_char_embed=False --add_highway_layer=True --rnet_attention=False --bidaf_attention=True --answer_pointer_RNET=False --smart_span=True --hidden_size_modeling=150 --mode=train --num_epochs=1
+python code/main.py --experiment_name=bidaf_best --dropout=0.15 --batch_size=60 --hidden_size_encoder=150 --embedding_size=100 --do_char_embed=False --add_highway_layer=True --rnet_attention=False --bidaf_attention=True --answer_pointer_RNET=False --smart_span=True --hidden_size_modeling=150 --mode=train --num_epochs=9
 ```
 
 * The settings to run the RNET model are:
@@ -20,7 +20,6 @@ python code/main.py --experiment_name=rnet_best --dropout=0.20 --batch_size=20 -
 --json_out_path=predictions_rnet.json \
 --ckpt_load_dir=experiments/rnet_best/best_checkpoint
 ```
-
 * Once you run the models, you will have a new folder by the name experiments which will have the results from your code runs
 
 * To start tensorboard, please run the following commands:
